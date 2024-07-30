@@ -8,6 +8,11 @@
 
   <resource-bundle>messages.MyBundle</resource-bundle>
 
+  <extensions defaultExtensionNs="com.intellij">
+    <notificationGroup id="intelli-mock-go-notifications" displayType="BALLOON" />
+    <postStartupActivity implementation="com.github.rhancav.intellimockgo.tasks.PluginEnvironmentCheckTask"/>
+  </extensions>
+
   <actions>
     <action id="com.github.rhancav.intellimockgo.action.GenerateMockAction"
       class="com.github.rhancav.intellimockgo.action.GenerateMockAction"
