@@ -21,4 +21,8 @@ object DirectoryAutoCompletionCache : TextCompletionCache<String> {
     override fun updateCache(prefix: String, parameters: CompletionParameters?) {
 
     }
+
+    fun clearCache(){
+        cache.clear()
+    }
 }

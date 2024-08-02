@@ -1,5 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
+  <depends>com.intellij.modules.platform</depends>
+
   <actions>
     <action class="com.github.rhancav.intellimockgo.action.GenerateMockAction"
       description="Generates mock"
@@ -7,7 +9,11 @@
       <add-to-group group-id="ProjectViewPopupMenu"/>
     </action>
   </actions>
-  <depends>com.intellij.modules.platform</depends>
+
+  <applicationListeners>
+    <listener class="com.github.rhancav.intellimockgo.listener.ProjectCloseListener" topic="com.intellij.openapi.project.ProjectManagerListener"/>
+  </applicationListeners>
+
   <extensions defaultExtensionNs="com.intellij">
     <notificationGroup displayType="BALLOON" id="intelli-mock-go-notifications"/>
     <postStartupActivity implementation="com.github.rhancav.intellimockgo.tasks.PluginInitTask"/>
