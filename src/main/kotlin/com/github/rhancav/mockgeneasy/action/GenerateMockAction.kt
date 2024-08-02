@@ -73,7 +73,7 @@ class GenerateMockAction : AnAction() {
                     override fun run(indicator: ProgressIndicator) {
                         indicator.text = "Generating mock for ${file.name}"
                         val genCmd = buildMockgenCommand(file, selectedDirectory, packageName)
-                        val (isSuccess, message) = genCmd.executeCommand()
+                        val (isSuccess, message) = genCmd.executeCommand(selectedDirectory)
                         indicator.text =
                             "Mock generation ${if (isSuccess) "successful" else "failed"}"
                         NotificationManager.sendNotification(
