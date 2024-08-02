@@ -21,8 +21,15 @@ class PluginInitTask : ProjectActivity {
 
     private fun initializeCache(project: Project) {
         val file = File(project.basePath!!)
-        val dirs = file.walkTopDown().filter { it.isDirectory }.map { it.path }.toMutableList()
+        val dirs = file.walkTopDown()
+            .filter { it.isDirectory && !it.isHidden && !isHiddenDirectory(it) }
+            .map { it.path }
+            .toMutableList()
         DirectoryAutoCompletionCache.setItems(dirs)
+    }
+
+    private fun isHiddenDirectory(file: File): Boolean {
+        return file.path.contains(".")
     }
 
     private fun checkPluginDependencies(project: Project) {
