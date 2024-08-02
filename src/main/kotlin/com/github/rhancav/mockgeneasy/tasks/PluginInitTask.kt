@@ -33,7 +33,7 @@ class PluginInitTask : ProjectActivity {
     }
 
     private fun checkPluginDependencies(project: Project) {
-        val goVersionResult = Commands.GO_VERSION.executeCommand()
+        val goVersionResult = Commands.GO_VERSION.executeCommand(project.presentableUrl!!)
         if (!goVersionResult.first) {
             NotificationManager.sendNotification(
                 project,
@@ -46,7 +46,7 @@ class PluginInitTask : ProjectActivity {
     }
 
     private fun checkMockgen(project: Project) {
-        val commandResult = Commands.GOMOCK_VERSION.executeCommand()
+        val commandResult = Commands.GOMOCK_VERSION.executeCommand(project.presentableUrl!!)
 
         if (!commandResult.first) {
             NotificationManager.sendNotification(
