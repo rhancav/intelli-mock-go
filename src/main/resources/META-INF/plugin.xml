@@ -1,24 +1,22 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-  <id>com.github.rhancav.intellimockgo</id>
-  <name>intelli-mock-go</name>
-  <vendor>rhancav</vendor>
-
-  <depends>com.intellij.modules.platform</depends>
-
-  <resource-bundle>messages.MyBundle</resource-bundle>
-
-  <extensions defaultExtensionNs="com.intellij">
-    <notificationGroup id="intelli-mock-go-notifications" displayType="BALLOON" />
-    <postStartupActivity implementation="com.github.rhancav.intellimockgo.tasks.PluginEnvironmentCheckTask"/>
-  </extensions>
-
   <actions>
-    <action id="com.github.rhancav.intellimockgo.action.GenerateMockAction"
-      class="com.github.rhancav.intellimockgo.action.GenerateMockAction"
-      text="Generate Mock" description="Generates mock">
+    <action class="com.github.rhancav.intellimockgo.action.GenerateMockAction"
+      description="Generates mock"
+      id="com.github.rhancav.intellimockgo.action.GenerateMockAction" text="Generate Mock">
       <add-to-group group-id="ProjectViewPopupMenu"/>
     </action>
   </actions>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <notificationGroup displayType="BALLOON" id="intelli-mock-go-notifications"/>
+    <postStartupActivity implementation="com.github.rhancav.intellimockgo.tasks.PluginInitTask"/>
+  </extensions>
+
+  <id>com.github.rhancav.intellimockgo</id>
+
+  <name>Intelli-Mock-Go</name>
+
+  <vendor>rhancav</vendor>
 
 </idea-plugin>
