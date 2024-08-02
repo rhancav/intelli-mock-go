@@ -1,7 +1,7 @@
-package com.github.rhancav.intellimockgo.common.util
+package com.github.rhancav.mockgeneasy.common.util
 
-import com.github.rhancav.intellimockgo.common.PluginConstants.Commands
-import com.github.rhancav.intellimockgo.common.exception.UnsupportedOperatingSystemException
+import com.github.rhancav.mockgeneasy.common.PluginConstants.Commands
+import com.github.rhancav.mockgeneasy.common.exception.UnsupportedOperatingSystemException
 import com.intellij.openapi.util.SystemInfo
 import java.io.BufferedReader
 import java.io.IOException

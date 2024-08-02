@@ -1,4 +1,4 @@
-package com.github.rhancav.intellimockgo.cache
+package com.github.rhancav.mockgeneasy.cache
 
 import com.intellij.codeInsight.completion.CompletionParameters
 import com.intellij.util.textCompletion.TextCompletionCache

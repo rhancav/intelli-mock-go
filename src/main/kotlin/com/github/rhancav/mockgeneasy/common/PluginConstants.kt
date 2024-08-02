@@ -1,4 +1,4 @@
-package com.github.rhancav.intellimockgo.common
+package com.github.rhancav.mockgeneasy.common
 
 interface PluginConstants {
     interface UITexts {
@@ -31,8 +31,8 @@ interface PluginConstants {
 
     interface Notification {
         companion object {
-            const val NOTIFICATION_TITLE: String = "Intelli Mock Go"
-            const val NOTIFICATION_GROUP: String = "intelli-mock-go-notifications"
+            const val NOTIFICATION_TITLE: String = "Mockgen Easy"
+            const val NOTIFICATION_GROUP: String = "mockgen-easy-notifications"
         }
     }
 }
