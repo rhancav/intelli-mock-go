@@ -1,10 +1,10 @@
-package com.github.rhancav.intellimockgo.action
+package com.github.rhancav.mockgeneasy.action
 
-import com.github.rhancav.intellimockgo.common.PluginConstants.MockGen
-import com.github.rhancav.intellimockgo.common.PluginConstants.UITexts
-import com.github.rhancav.intellimockgo.common.util.NotificationManager
-import com.github.rhancav.intellimockgo.common.util.executeCommand
-import com.github.rhancav.intellimockgo.ui.GenerateMockDialog
+import com.github.rhancav.mockgeneasy.common.PluginConstants.MockGen
+import com.github.rhancav.mockgeneasy.common.PluginConstants.UITexts
+import com.github.rhancav.mockgeneasy.common.util.NotificationManager
+import com.github.rhancav.mockgeneasy.common.util.executeCommand
+import com.github.rhancav.mockgeneasy.ui.GenerateMockDialog
 import com.intellij.notification.NotificationType
 import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction

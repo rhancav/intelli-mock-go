@@ -1,4 +1,4 @@
-package com.github.rhancav.intellimockgo.common.exception
+package com.github.rhancav.mockgeneasy.common.exception
 
 class UnsupportedOperatingSystemException(os: String) :
     Throwable("Unsupported Operating System $os")

@@ -1,9 +1,9 @@
-package com.github.rhancav.intellimockgo.tasks
+package com.github.rhancav.mockgeneasy.tasks
 
-import com.github.rhancav.intellimockgo.cache.DirectoryAutoCompletionCache
-import com.github.rhancav.intellimockgo.common.PluginConstants.Commands
-import com.github.rhancav.intellimockgo.common.util.NotificationManager
-import com.github.rhancav.intellimockgo.common.util.executeCommand
+import com.github.rhancav.mockgeneasy.cache.DirectoryAutoCompletionCache
+import com.github.rhancav.mockgeneasy.common.PluginConstants.Commands
+import com.github.rhancav.mockgeneasy.common.util.NotificationManager
+import com.github.rhancav.mockgeneasy.common.util.executeCommand
 import com.intellij.notification.NotificationType
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.startup.ProjectActivity

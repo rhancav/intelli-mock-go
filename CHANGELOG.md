@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# intelli-mock-go Changelog
+# mockgen-easy Changelog
 
 ## [Unreleased]
 

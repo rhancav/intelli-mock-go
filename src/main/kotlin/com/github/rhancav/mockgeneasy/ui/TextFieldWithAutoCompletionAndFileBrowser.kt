@@ -1,6 +1,6 @@
-package com.github.rhancav.intellimockgo.ui
+package com.github.rhancav.mockgeneasy.ui
 
-import com.github.rhancav.intellimockgo.common.PluginConstants
+import com.github.rhancav.mockgeneasy.common.PluginConstants
 import com.intellij.openapi.fileChooser.FileChooserDescriptorFactory
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.ComponentWithBrowseButton
