@@ -15,7 +15,7 @@ interface PluginConstants {
             const val COMMAND_TEMPLATE =
                 "mockgen -source=\"%s\" -destination=\"%s\" -package=\"%s\""
             const val INTERFACE_REGEX = "(?s)\\btype\\s+\\w+\\s+interface\\s*\\{.*?}"
-            const val GO_EXTENSION = ".go"
+            const val GO_EXTENSION = "go"
             const val MOCK_SUFFIX = "_mock.go"
         }
     }
